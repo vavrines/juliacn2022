@@ -1,0 +1,23 @@
+# setup
+matter = scalar
+case = advection
+space = 1d0f0v
+flux = gks
+collision = nothing
+nSpecies = 1
+interpOrder = 1
+limiter = minmod
+boundary = fix
+cfl = 0.5
+maxTime = 1.0
+
+# phase space
+x0 = 0
+x1 = 1
+nx = 200
+pMeshType = uniform
+nxg = 1
+
+# gas
+a = 0.0
+mu = 1e-6
