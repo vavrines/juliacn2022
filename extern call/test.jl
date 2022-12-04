@@ -25,7 +25,7 @@ using .KitCxx
 KitCxx.test1(u)
 @show u
 
-KitCxx.test2(u, 1, 2022.0)
+KitCxx.test2(u)
 @show u
 
 u = collect(-5:0.0001:5)

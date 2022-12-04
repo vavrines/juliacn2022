@@ -6,8 +6,8 @@
 void test(double (*u)[2]) { u[0][1] = 2022.0; }
 void test1(xt::jltensor<double, 2> u) { u(0, 1) = 2022.0; }
 
-void test2(jlcxx::ArrayRef<double, 2> a, const int64_t i, const double v) {
-  a[i, i] = v;
+void test2(jlcxx::ArrayRef<double, 2> u) {
+  u[0, 1] = 2022.0;
 }
 
 template <typename T> void maxwellian_xt(T H, T u, T prim) {
